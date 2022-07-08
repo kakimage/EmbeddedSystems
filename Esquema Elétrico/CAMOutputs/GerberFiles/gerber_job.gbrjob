@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2022-06-29T01:21:59Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.6.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "17103448"
+        },
+        "Owner": "Leandro Kakimoto <dkmoaz@gmail.com>",
+        "Size": {
+            "X": 48.692,
+            "Y": 43.434
+        }
+    }
+}

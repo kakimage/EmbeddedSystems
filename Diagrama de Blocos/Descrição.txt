@@ -1,0 +1,5 @@
+Sistema para avaliar nível de oxigenação pulmonar.
+
+O sistema proposto consiste em um aparelho que utiliza do sensor digital de pressão BMP280 para avaliar a capacidade pulmonar dos usuários. 
+O sensor atua entre um intervalo de pressão máximo de 300 a 1100hPa,  o que equivale a pressão presente a 9000m e 500m acima/abaixo do nível do mar, respectivamente; e é recomendado para aplicações como previsão do tempo, mudança de andares em elevadores, ou navegação em ambientes fechados.
+O foco principal do projeto é desenvolver um sistema que utilize deste sensor e, após o envio dos dados de pressão recebidos através do sopro de um usuário seja possível avaliar, por exemplo, possíveis danos pulmonares em pacientes que tiveram pneumonia ou COVID-19.
