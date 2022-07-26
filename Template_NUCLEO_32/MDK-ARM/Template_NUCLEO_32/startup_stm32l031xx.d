@@ -1,0 +1,1 @@
+template_nucleo_32\startup_stm32l031xx.o: startup_stm32l031xx.s
