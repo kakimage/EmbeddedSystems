@@ -31,36 +31,40 @@ void ble(void const * argument)
   {
 		HAL_UART_Receive(&huart1, dataBLE, 1, HAL_MAX_DELAY);
 		if (dataBLE[0] != 0xFF){
-			
-			switch(dataBLE[0]){
-				case 0x00:							// Escreve no GPIO OUT.
-					if (dataBLE[1] == 0x01){
+			if(dataBLE[0] >= 0x48)
+			{
+				if (dataBLE[1] == 0x01){
 						setFlagGPIO = ON;
 						dataBLE[2] = 0xAA;			// Avise App mobile que o Comando é válido.
-						HAL_UART_Transmit(&huart1, &dataBLE[2], 1, HAL_MAX_DELAY);
+						HAL_UART_Transmit(&huart1, &dataBLE[0], 1, HAL_MAX_DELAY);
+						HAL_GPIO_WritePin(GPIOA, OUT_Pin, GPIO_PIN_SET);
 					}
 					else{
 						setFlagGPIO = OFF;
 						dataBLE[2] = 0xAA;			// Avise App mobile que o Comando é válido.
-						HAL_UART_Transmit(&huart1, &dataBLE[2], 1, HAL_MAX_DELAY);
+						HAL_UART_Transmit(&huart1, &dataBLE[0], 1, HAL_MAX_DELAY);
+						HAL_GPIO_WritePin(GPIOA, OUT_Pin, GPIO_PIN_SET);
 					}
-					break;
-					
-				case 0x01: 							// Escreve no I2C.
-					flagNewDataToI2C = TRUE;
-				    dataBLE[1] = 0x7E;
-					dataBLE[2] = 0xAA;				// Avise App mobile que o Comando é válido.
-					HAL_UART_Transmit(&huart1, &dataBLE[2], 1, HAL_MAX_DELAY);
-					break;
-				
-				case 0x02:							// Escreve no SPI.
-					flagNewDataToSPI = TRUE;
-				    dataBLE[1] = 0xE7;
-					dataBLE[2] = 0xAA;				// Avise App mobile que o Comando é válido.
-					HAL_UART_Transmit(&huart1, &dataBLE[2], 1, HAL_MAX_DELAY);			
-					break;
-				
 			}
+			else
+			{
+				if (dataBLE[1] == 0x01){
+						setFlagGPIO = OFF;
+						dataBLE[2] = 0xAA;			// Avise App mobile que o Comando é válido.
+						HAL_UART_Transmit(&huart1, &dataBLE[0], 1, HAL_MAX_DELAY);
+						HAL_GPIO_WritePin(GPIOA, OUT_Pin, GPIO_PIN_RESET);
+					}
+					else{
+						setFlagGPIO = OFF;
+						dataBLE[2] = 0xAA;			// Avise App mobile que o Comando é válido.
+						HAL_UART_Transmit(&huart1, &dataBLE[0], 1, HAL_MAX_DELAY);
+						HAL_GPIO_WritePin(GPIOA, OUT_Pin, GPIO_PIN_RESET);
+					}
+			}
+		}
+			
+			
+			
 			dataBLE[0] = 0xFF;						// Limpa byte de recepção.
 
 			taskYIELD();
@@ -68,6 +72,6 @@ void ble(void const * argument)
 
   }
 
-}
+
 
 

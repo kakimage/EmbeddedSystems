@@ -21,20 +21,12 @@ Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
 Dialog DLL:      TCM.DLL V1.56.1.0
  
 <h2>Project:</h2>
-C:\Users\leandro.kakimoto\Desktop\EmbeddedSystems\CPU_UNIVERSAL\CPU_UNIVERSAL\MDK-ARM\CPU_UNIVERSAL.uvprojx
+C:\Users\leandro.kakimoto\Desktop\EmbeddedSystems\old\CPU_UNIVERSAL\CPU_UNIVERSAL\MDK-ARM\CPU_UNIVERSAL.uvprojx
 Project File Date:  07/12/2022
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM_Compilar_5.06u7\Bin'
 Build target 'CPU_UNIVERSAL'
-compiling task_ble.c...
-..\Core\Src\task_ble.c(38): error:  #20: identifier "ON" is undefined
-  						setFlagGPIO = ON;
-..\Core\Src\task_ble.c(43): error:  #20: identifier "OFF" is undefined
-  						setFlagGPIO = OFF;
-..\Core\Src\task_ble.c(50): error:  #20: identifier "TRUE" is undefined
-  					flagNewDataToI2C = TRUE;
-..\Core\Src\task_ble.c: 0 warnings, 3 errors
 compiling task_seriais.c...
 ..\Core\Src\task_seriais.c(28): error:  #20: identifier "TRUE" is undefined
   	  if (flagNewDataToI2C == TRUE){
@@ -49,6 +41,14 @@ compiling task_gpio.c...
 ..\Core\Src\task_gpio.c(25): error:  #20: identifier "ON" is undefined
   		if (setFlagGPIO == ON)									// Escrita: dado enviado pelo App mobile.
 ..\Core\Src\task_gpio.c: 0 warnings, 1 error
+compiling task_ble.c...
+..\Core\Src\task_ble.c(38): error:  #20: identifier "ON" is undefined
+  						setFlagGPIO = ON;
+..\Core\Src\task_ble.c(43): error:  #20: identifier "OFF" is undefined
+  						setFlagGPIO = OFF;
+..\Core\Src\task_ble.c(50): error:  #20: identifier "TRUE" is undefined
+  					flagNewDataToI2C = TRUE;
+..\Core\Src\task_ble.c: 0 warnings, 3 errors
 "CPU_UNIVERSAL\CPU_UNIVERSAL.axf" - 8 Error(s), 0 Warning(s).
 
 <h2>Software Packages used:</h2>
@@ -74,7 +74,7 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
 Target not created.
-Build Time Elapsed:  00:00:03
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

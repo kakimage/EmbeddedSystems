@@ -22,7 +22,7 @@ void gpio(void const * argument)
 {	
   for(;;)
   {															    //		
-		if (setFlagGPIO == ON)									// Escrita: dado enviado pelo App mobile.
+		if (setFlagGPIO == ON)								// Escrita: dado enviado pelo App mobile.
 			HAL_GPIO_WritePin(GPIOA, OUT_Pin, GPIO_PIN_SET);	//
 		else													//
 			HAL_GPIO_WritePin(GPIOA, OUT_Pin, GPIO_PIN_RESET);	//
