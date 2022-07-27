@@ -75,10 +75,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="3.81" y1="11.43" x2="52.248" y2="11.176" width="0" layer="20"/>
-<wire x1="52.248" y1="11.176" x2="52.248" y2="54.346" width="0" layer="20"/>
-<wire x1="52.248" y1="54.346" x2="3.81" y2="54.6" width="0" layer="20"/>
-<wire x1="3.81" y1="54.6" x2="3.81" y2="11.43" width="0" layer="20"/>
+<wire x1="3.81" y1="11.176" x2="52.502" y2="11.176" width="0" layer="20"/>
+<wire x1="52.502" y1="11.176" x2="52.502" y2="54.6" width="0" layer="20"/>
+<wire x1="52.502" y1="54.6" x2="3.81" y2="54.61" width="0" layer="20"/>
+<wire x1="3.81" y1="54.61" x2="3.81" y2="11.176" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">

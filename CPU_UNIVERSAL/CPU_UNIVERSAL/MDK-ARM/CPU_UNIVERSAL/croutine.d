@@ -1,7 +1,7 @@
 cpu_universal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
 cpu_universal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-cpu_universal\croutine.o: C:\Keil_v5\ARM\ARM_Compilar_5.06u7\Bin\..\include\stddef.h
-cpu_universal\croutine.o: C:\Keil_v5\ARM\ARM_Compilar_5.06u7\Bin\..\include\stdint.h
+cpu_universal\croutine.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+cpu_universal\croutine.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 cpu_universal\croutine.o: ../Core/Inc/FreeRTOSConfig.h
 cpu_universal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 cpu_universal\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h

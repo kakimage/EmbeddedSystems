@@ -1,9 +1,9 @@
 cpu_universal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compilar_5.06u7\Bin\..\include\stdlib.h
-cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compilar_5.06u7\Bin\..\include\string.h
+cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdlib.h
+cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\string.h
 cpu_universal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
-cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compilar_5.06u7\Bin\..\include\stddef.h
-cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compilar_5.06u7\Bin\..\include\stdint.h
+cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stddef.h
+cpu_universal\tasks.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin\..\include\stdint.h
 cpu_universal\tasks.o: ../Core/Inc/FreeRTOSConfig.h
 cpu_universal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
 cpu_universal\tasks.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
